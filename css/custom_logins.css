@@ -1,0 +1,168 @@
+/*
+ * Specific styles of signin component
+ */
+/*
+ * General styles
+ */
+body, html {
+    height: 100%;
+}
+
+.card-container.card {
+    max-width: 350px;
+    padding: 40px 40px;
+}
+
+.btn {
+    font-weight: 700;
+    height: 36px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+/*
+ * Card component
+ */
+.card {
+    background-color: #F7F7F7;
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    border-radius: 2px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    border-radius: 50%;
+}
+
+/*
+ * Form styles
+ */
+.profile-name-card {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 0;
+    min-height: 1em;
+}
+
+.reauth-email {
+    display: block;
+    color: #404040;
+    line-height: 2;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.form-signin #inputEmail,
+.form-signin #inputPassword {
+    direction: ltr;
+    height: 44px;
+    font-size: 16px;
+}
+
+.form-signin input[type=email],
+.form-signin input[type=password],
+.form-signin input[type=text],
+.form-signin button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+    border-color: rgb(104, 145, 162);
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+}
+
+.btn.btn-signin {
+    background-color: rgb(104, 145, 162);
+    padding: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    height: 36px;
+    border-radius: 3px;
+    border: none;
+    transition: all 0.218s;
+}
+
+.btn.btn-signin:hover,
+.btn.btn-signin:active,
+.btn.btn-signin:focus {
+    background-color: rgb(12, 97, 33);
+}
+
+.forgot-password {
+    color: rgb(104, 145, 162);
+}
+
+.forgot-password:hover,
+.forgot-password:active,
+.forgot-password:focus {
+    color: rgb(12, 97, 33);
+}
+
+/* Dropdown icon styles */
+.dropdown-icon {
+    position: absolute;
+    right: 10px; /* Adjust this value to position the icon */
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevent clicks on the icon */
+}
+
+.form-group {
+    position: relative; /* Enable positioning of child elements */
+}
+
+.form-control {
+    margin-bottom: 14px; /* Adjust the space between elements */
+}
+
+.alert {
+    display: <?= $showAlert ? 'block' : 'none'; ?>; /* Show or hide based on PHP variable */
+    width: calc(80%); /* Adjusts width relative to the container minus 10px */
+    max-width: 350px; /* Maximum width of the alert */
+    min-width: 210px; /* Optional: minimum width to prevent it from being too small */
+    margin: 20px auto; /* Center the alert */
+    text-align: center; /* Center the text inside the alert */
+    font-size: 16px; /* Adjust font size */
+    margin-bottom: 20px; /* Space below the alert */
+}
+
+.alert-success {
+    background-color: #d4edda; /* Light green */
+    color: #155724; /* Dark green text */
+    border-color: #c3e6cb; /* Darker green border */
+}
+
+.alert .close {
+    position: absolute;
+    right: 13px; /* Adjust as needed */
+    top: 7px; /* Adjust as needed */
+    border: none; /* Remove default button border */
+    background: none; /* Remove button background */
+}
+
+.alert-danger .close {
+    color: #FF9999; /* Red color for error alerts */
+}
+        
+.alert-success .close {
+    color: green; /* Green color for success alerts */
+}
