@@ -35,7 +35,7 @@
     ?>
 
     <!-- Image Preview with inline styles -->
-    <img id="preview" src="Profile_pic.jpg" alt="Image Preview" 
+    <img id="preview" src="img/Profile_pic.jpg" alt="Image Preview" 
          style="display: block; margin-top: 20px; margin-left: 20px; width: <?php echo $sizeRange; ?>px; border: 5px solid <?php echo $borderColor; ?>;">
 </body>
 </html>
