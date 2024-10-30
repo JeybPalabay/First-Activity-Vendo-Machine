@@ -1,0 +1,6 @@
+User Type		Username 		Password
+Admin			admin			Pass1234
+Admin			renmark			Pogi1234
+Content Manager		pepito			manaloto
+Content Manager		bryan			palabay	
+System User		pedro			penduko
