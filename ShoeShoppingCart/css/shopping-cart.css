@@ -1,0 +1,151 @@
+.card-container {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #f7f7f7; /* Light gray background */
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+.card-container:hover {
+    background-color: #e0e0e0; /* Darker gray on hover */
+}
+.card-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px; 
+    overflow: hidden;
+}
+.card-image-wrapper img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    transition: opacity 0.5s ease-in-out;
+    display: block;
+}
+.card-image-wrapper .hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.card-container:hover .card-image-wrapper .normal {
+    opacity: 0;
+}
+.card-container:hover .card-image-wrapper .hover {
+    opacity: 1;
+}
+.card-footer button {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.card-container:hover .card-footer button {
+    opacity: 1;
+    transform: translateY(0);
+}
+.card-body {
+    color: #666; /* Gray text color */
+}
+
+.product-image {
+    position: relative;
+    overflow: hidden;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.product-image img.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.product-image:hover img.normal {
+    opacity: 0;
+}
+
+.product-image:hover img.hover {
+    opacity: 1;
+}
+
+.header-title {
+    font-weight: 700;
+    color: #004085;
+}
+
+.btn-custom {
+    background-color: #0062cc;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.card-shadow {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+}
+
+.badge-custom {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.btn-outline-secondary {
+    border-color: #004085;
+    color: #004085;
+    background-color: white;
+    transition: all 0.3s ease; /* Adds smooth transition */
+}
+
+.btn-outline-secondary:hover {
+    background-color: #f0f8ff; /* Light background color on hover */
+    color: #004085;
+    border-color: #004085;
+    box-shadow: 0px 4px 8px rgba(0, 64, 133, 0.2); /* Soft shadow effect */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.table-blue thead {
+    background-color: #007bff;
+    color: white;
+}
+.table-blue tbody tr {
+    background-color: #cce5ff;
+}
+.table-blue tbody tr:nth-child(even) {
+    background-color: #b8daff;
+}
+.table-blue tfoot {
+    background-color: #007bff;
+    color: white;
+}
+
+.normal-image {
+    transition: opacity 0.5s ease-in-out;
+}
+.hover-image {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.position-relative:hover .normal-image {
+    opacity: 0;
+}
+.position-relative:hover .hover-image {
+    opacity: 1;
+}
